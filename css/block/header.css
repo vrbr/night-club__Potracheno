@@ -152,6 +152,7 @@
     }
     .header__wrapper {
         padding-top: 30px;
+        padding-bottom: 30px;
     }
     .header__wrapper picture {
         flex: 1;
@@ -234,7 +235,7 @@
     .dropdown__content {
         display: none;
         position: absolute;
-        top: 50px;
+        top: 72px;
         padding: 10px;
         min-width: 172px;
         min-height: 72px;
