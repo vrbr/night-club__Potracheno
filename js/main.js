@@ -7,7 +7,7 @@ menuBtn.addEventListener('click', () => {
 
 //swiper
 
-const swiper = new Swiper(".mySwiper", {
+const swiperAbout = new Swiper(".mySwiper-about", {
     spaceBetween: 20,
     navigation: {
         nextEl: ".swiper-button-next",
@@ -17,4 +17,28 @@ const swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true,
     },
+});
+
+//swiper-news
+
+const swiperNews = new Swiper(".mySwiper-news", {
+    slidesPerView: 3.5,
+    spaceBetween: 7,
+    centeredSlides: false,
+    pagination: {
+        el: ".swiper-pagination-news",
+        clickable: true,
+    },
+    breakpoints: {
+        320: {
+            pagination: false,
+        },
+        767: {
+            spaceBetween: 20
+        },
+        1024: {
+            slidesPerView: 4,
+            pagination: true,
+        }
+    }
 });

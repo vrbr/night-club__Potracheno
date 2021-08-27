@@ -1,0 +1,100 @@
+.news {
+    margin: 0 auto;
+    max-width: 1440px;
+    background-image: url("../../img/news-bg.jpg");
+}
+.news__title {
+    margin: 0;
+    padding: 20px 10px 14px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+.swiper.swiper-news {
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 18px;
+    padding-right: 40px;
+}
+.swiper-wrapper-news {
+    margin-left: 10px;
+}
+.swiper-slide-news {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide-news img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 11px;
+}
+
+@media (min-width: 768px) {
+    .news__title {
+        padding: 30px;
+        font-size: 26px;
+    }
+    .swiper-wrapper-news {
+        margin-left: 30px;
+    }
+    .swiper.swiper-news {
+        padding-right: 60px;
+        padding-bottom: 30px;
+    }
+}
+@media (min-width: 1024px) {
+    .news__title {
+        margin-bottom: 28px;
+        padding: 31px 30px 28px 50px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .swiper.swiper-news {
+        padding-bottom: 63px;
+    }
+    .swiper-news {
+        width: 100%;
+        overflow: visible;
+    }
+    .swiper-wrapper-news {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+    }
+    .swiper-slide-news {
+        width: 21vw !important;
+    }
+    .swiper-slide-news:last-of-type {
+        margin-right: 40px !important;
+    }
+}
+@media (min-width: 1440px) {
+    .swiper-wrapper-news {
+        margin: 0 auto;
+        margin-top: 145px;
+        margin-left: 125px;
+        width: 1190px;
+    }
+    .news__title {
+        margin-bottom: 0;
+        padding-left: 125px;
+        max-width: 1210px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .swiper.swiper-news {
+        padding-right: 0;
+    }
+    .swiper-slide-news {
+        width: 280px !important;
+    }
+    .swiper-slide-news:last-of-type {
+        margin-right: 0px !important;
+    }
+}
