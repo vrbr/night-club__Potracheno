@@ -1,0 +1,126 @@
+.contacts-info__wrapper {
+    border-bottom: 1px solid #525252;
+}
+.contacts__title {
+    margin: 0;
+    padding-bottom: 18px;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.contacts-info__title {
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+}
+.contacts-info__reserve-btn {
+    font-size: 12px;
+    line-height: 14px;
+}
+.contacts-info__social-item + .contacts-info__social-item {
+    margin-top: 15px;
+}
+.contacts-info__social-list {
+    margin-bottom: 25px;
+    margin-left: 31px;
+}
+.contacts-info__social-link {
+    position: relative;
+}
+.contacts-info__social-link::after {
+    position: absolute;
+    content: "";
+}
+.social-phone::after {
+    background-image: url("../../img/social-phone.svg");
+    top: -15px;
+    left: -42px;
+    width: 44px;
+    height: 48px;
+}
+.social-mail::after {
+    background-image: url("../../img/social-mail.svg");
+    top: -14px;
+    left: -44px;
+    width: 47px;
+    height: 47px;
+}
+.social-location::after {
+    background-image: url("../../img/social-location.svg");
+    top: -17px;
+    left: -43px;
+    width: 45px;
+    height: 52px;
+}
+.contacts-info__reserve-btn {
+    margin-bottom: 32px;
+    padding: 13px 23px;
+    border: 0;
+    background-color: #CB3B48;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: 10px;
+    line-height: 12px;
+}
+.contact-info__messenger-list {
+    display: flex;
+    margin-bottom: 25px;
+}
+.contact-info__messenger-item + .contact-info__messenger-item {
+    padding-left: 13px;
+}
+.contact-info__messenger-link {
+    position: relative;
+}
+.contact-info__messenger-link::before {
+    position: absolute;
+    content: "";
+}
+.messenger-insta {
+    background-image: url("../../img/insta.svg");
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: 0;
+}
+.messenger-telega {
+    background-image: url("../../img/telega.svg");
+    width: 25px;
+    height: 22px;
+    top: 0;
+    left: 0;
+}
+.messenger-viber {
+    background-image: url("../../img/viber.svg");
+    width: 26px;
+    height: 26px;
+    top: 0;
+    left: 0;
+}
+.contacts-map__wrapper {
+    text-align: center;
+}
+.contacts-map__map {
+    margin-top: 27px;
+    margin-bottom: 19px;
+}
+.contacts-map__map img {
+    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
+    border-radius: 15px;
+}
+.contacts-map__mode {
+    margin: 0;
+    padding-bottom: 24px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+}
+.contacts-map__mode span {
+    padding-left: 13px;
+    font-weight: 400;
+}
