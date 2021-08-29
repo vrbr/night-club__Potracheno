@@ -1,5 +1,12 @@
 .contacts-info__wrapper {
-    border-bottom: 1px solid #525252;
+    position: relative;
+}
+.contacts-info__wrapper::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #525252;
 }
 .contacts__title {
     margin: 0;
@@ -64,7 +71,7 @@
     border-radius: 3px;
     text-align: center;
     text-transform: uppercase;
-    font-style: 10px;
+    font-size: 10px;
     line-height: 12px;
 }
 .contact-info__messenger-list {
@@ -110,6 +117,8 @@
     margin-bottom: 19px;
 }
 .contacts-map__map img {
+    width: 100%;
+    max-width: 400px;
     filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
     border-radius: 15px;
 }
@@ -123,4 +132,104 @@
 .contacts-map__mode span {
     padding-left: 13px;
     font-weight: 400;
+}
+
+@media (min-width: 600px) {
+    .contacts .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contacts-info__wrapper {
+        flex: 50%;
+    }
+    .contacts-info__wrapper::after {
+        width: 1px;
+        height: 270px;
+        top: 45px;
+        right: 0;
+    }
+    .contacts-map__wrapper {
+        flex: 50%;
+        padding-left: 10px;
+        margin-top: 42px;
+    }
+}
+@media (min-width: 768px) {
+    .contacts-info__title,
+    .contacts-map__mode {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .contacts-map__wrapper {
+        padding-left: 30px;
+    }
+}
+@media (min-width: 846px) {
+    .contacts-map__wrapper {
+        margin-top: 17px;
+    }
+}
+@media (min-width: 1440px) {
+    .contacts__title {
+        padding-bottom: 51px;
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .contacts-info__wrapper {
+        flex: 32%;
+    }
+    .contacts-info__wrapper::after {
+        height: 473px;
+    }
+    .contacts-info__title {
+        padding-bottom: 30px;
+    }
+    .contacts-info__social-list {
+        margin-left: 60px;
+        margin-bottom: 44px;
+    }
+    .contacts-info__social-item + .contacts-info__social-item {
+        margin-top: 29px;
+    }
+    .contacts-info__title,
+    .contacts-info__social-link,
+    .contacts-map__mode {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .contacts-info__reserve-btn {
+        padding: 14px 56px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .contact-info__messenger-item + .contact-info__messenger-item {
+        padding-left: 21px;
+    }
+    .social-phone::after {
+        background-image: url("../../img/social-phone-desk.svg");
+        top: -30px;
+        left: -86px;
+        width: 90px;
+        height: 91px;
+    }
+    .social-mail::after {
+        background-image: url("../../img/social-mail-desk.svg");
+        top: -26px;
+        left: -87px;
+        width: 97px;
+        height: 88px;
+    }
+    .social-location::after {
+        background-image: url("../../img/social-location-desk.svg");
+        top: -35px;
+        left: -84px;
+        width: 93px;
+        height: 100px;
+    }
+    .contacts-map__map {
+        margin-bottom: 51px;
+    }
+    .contacts-map__map img {
+        max-width: 616px;
+    }
 }
