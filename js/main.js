@@ -42,3 +42,17 @@ const swiperNews = new Swiper(".mySwiper-news", {
         }
     }
 });
+
+//swiper-menu
+
+const swiperMenu = new Swiper(".mySwiper-menu", {
+    slidesPerView: 3.5,
+    spaceBetween: 7,
+    centeredSlides: false,
+    breakpoints: {
+        767: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+        }
+    }
+});
