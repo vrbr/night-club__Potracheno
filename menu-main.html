@@ -23,8 +23,8 @@
                 </picture>
 
                 <div class="menu-desk__nav">
-                    <a href="" class="menu-desk__link">Главная</a>
-                    <a href="menu-main.html" class="menu-desk__link">Меню</a>
+                    <a href="index.html" class="menu-desk__link">Главная</a>
+                    <a href="" class="menu-desk__link">Меню</a>
                     <div class="dropdown">
                         <button class="dropdown__btn">Еще...</button>
                         <div class="dropdown__content">
@@ -50,10 +50,10 @@
                     <div class="menu__popup">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="" class="menu__link">Главная</a>
+                                <a href="index.html" class="menu__link">Главная</a>
                             </li>
                             <li class="menu__item">
-                                <a href="menu-main.html" class="menu__link">Меню</a>
+                                <a href="" class="menu__link">Меню</a>
                             </li>
                             <li class="menu__item">
                                 <a href="" class="menu__link">Фотоотчеты</a>
@@ -69,68 +69,7 @@
         </div>
     </header>
 
-    <section class="intro">
-        <div class="intro__container">
-            <picture>
-                <source media="(min-width: 1024px)" srcset="img/intro-desk.svg">
-                <img src="img/intro-mob.svg" alt="">
-            </picture>
-            <div class="intro__links">
-                <a class="intro__link-reservation" href="#">Забронировать столик</a>
-                <a class="intro__link-menu" href="#">посмотреть меню</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="about">
-        <div class="about__container">
-            <h1 class="about__title">О нашем<br><span>заведении</span></h1>
-            <div class="about__inner">
-                <div class="swiper swiper-about mySwiper mySwiper-about">
-                    <a class="about__more" href="#">Подробнее</a>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <source media="(min-width: 1440px)" srcset="img/about/about-slide-1_desk.jpg">
-                            <source media="(min-width: 1024px)" srcset="img/about/about-slide-1_tab.jpg">
-                            <img src="img/about/about-slide-1.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <source media="(min-width: 1440px)" srcset="img/about/about-slide-2_desk.jpg">
-                            <source media="(min-width: 1024px)" srcset="img/about/about-slide-2_tab.jpg">
-                            <img src="img/about/about-slide-2.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <source media="(min-width: 1440px)" srcset="img/about/about-slide-3_desk.jpg">
-                            <source media="(min-width: 1024px)" srcset="img/about/about-slide-3_tab.jpg">
-                            <img src="img/about/about-slide-3.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <source media="(min-width: 1440px)" srcset="img/about/about-slide-4_desk.jpg">
-                            <source media="(min-width: 1024px)" srcset="img/about/about-slide-4_tab.jpg">
-                            <img src="img/about/about-slide-4.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <source media="(min-width: 1440px)" srcset="img/about/about-slide-5_desk.jpg">
-                            <source media="(min-width: 1024px)" srcset="img/about/about-slide-5_tab.jpg">
-                            <img src="img/about/about-slide-5.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper__buttons">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-                <div class="about__info-text">
-                    <p class="about__text">С другой стороны сложившаяся структура организации требуют определения и уточнения модели развития. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий требуют от нас анализа дальнейших направлений развития.</p>
-                    <p class="about__text">Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров играет важную роль в формировании форм развития.</p>
-                    <a class="about__text-more" href="">Читать больше </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="news">
+    <section class="news menu-news">
         <h1 class="news__title">Новости и акции</h1>
         <div class="news__inner">
             <div class="swiper swiper-news mySwiper mySwiper-news">
@@ -152,64 +91,73 @@
         </div>
     </section>
 
-    <section class="preview-menu">
-        <div class="container">
-            <h2 class="preview-menu__title">Что у нас можно<br><span>покушать?</span></h2>
-            <picture>
-                <source media="(min-width: 1024px)" srcset="">
-                <img src="img/preview-menu.png" alt="">
-            </picture>
-            <p class="preview-menu__info">С другой стороны сложившаяся структура организации требуют определения и уточнения модели развития. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий требуют от нас анализа дальнейших направлений развития.</p>
-            <a href="" class="preview-menu__link">Смотреть меню</a>
-        </div>
-    </section>
-
-    <section class="contacts">
-        <div class="container">
-            <div class="contacts-info__wrapper">
-                <h2 class="contacts__title">Контакты</h2>
-                <p class="contacts-info__title">Контактные данные</p>
-                <ul class="contacts-info__social-list">
-                    <li class="contacts-info__social-item">
-                        <a class="contacts-info__social-link social-phone" href="tel:+79999999999">
-                            +7 (999) 999-99-99
-                        </a>
-                    </li>
-                    <li class="contacts-info__social-item">
-                        <a class="contacts-info__social-link social-mail" href="mailto:potracheno@mail.ru">
-                            potracheno@mail.ru
-                        </a>
-                    </li>
-                    <li class="contacts-info__social-item">
-                        <a class="contacts-info__social-link social-location">
-                            г. Самара, ул. Ерошевского, 70
-                        </a>
-                    </li>
-                </ul>
-                <p class="contacts-info__title">Забронировать столик</p>
-                <button class="contacts-info__reserve-btn">Онлайн бронирование</button>
-                <div class="contact-info__messenger">
-                    <ul class="contact-info__messenger-list">
-                        <li class="contact-info__messenger-item">
-                            <a class="contact-info__messenger-link messenger-insta" href="#">
-                            </a>
-                        </li>
-                        <li class="contact-info__messenger-item">
-                            <a class="contact-info__messenger-link messenger-telega" href="#"></a>
-                        </li>
-                        <li class="contact-info__messenger-item">
-                            <a class="contact-info__messenger-link messenger-viber" href="#"></a>
-                        </li>
-                    </ul>
+    <section class="catalog">
+        <div class="catalog__filter">
+            <div class="tabs-wrapper">
+                <div class="tabs">
+                    <a href="#filter-1" class="tab tab--active">Основное Меню</a>
+                    <a href="#filter-2" class="tab">Барная карта</a>
                 </div>
             </div>
-            <div class="contacts-map__wrapper">
-                <a href="#" class="contacts-map__map">
-                    <img src="img/map.jpg" alt="">
-                </a>
-                <p class="contacts-map__mode">Режим работы <span>Пт-Сб 21:00-8:00</span></p>
+            <div class="search-wrapper">
+                <input type="search" class="search__input" placeholder="Поиск...">
+                <button class="search__btn">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.12819 14.854C11.8428 14.854 14.854 11.8428 14.854 8.12819C14.854 4.41361 11.8428 1.40234 8.12819 1.40234C4.41361 1.40234 1.40234 4.41361 1.40234 8.12819C1.40234 11.8428 4.41361 14.854 8.12819 14.854Z" stroke="white" stroke-width="1.16409" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.2818 18.2817L13.0435 13.0433" stroke="white" stroke-width="1.16409" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="btn-wrapper">
+                <span class="btn-wrapper__filter-btn">Фильтр</span>
+                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.7315 1.37191H5.97747C5.70931 0.575439 4.95596 0 4.07021 0C3.18447 0 2.43112 0.575439 2.16296 1.37191H0.64042C0.286738 1.37191 0 1.65865 0 2.01233C0 2.36601 0.286738 2.65275 0.64042 2.65275H2.163C2.43116 3.44922 3.18451 4.02466 4.07026 4.02466C4.956 4.02466 5.70935 3.44922 5.97751 2.65275H15.7316C16.0853 2.65275 16.372 2.36601 16.372 2.01233C16.372 1.65865 16.0853 1.37191 15.7315 1.37191ZM4.07021 2.74382C3.66688 2.74382 3.33872 2.41567 3.33872 2.01233C3.33872 1.60899 3.66688 1.28084 4.07021 1.28084C4.47355 1.28084 4.8017 1.60899 4.8017 2.01233C4.8017 2.41567 4.47355 2.74382 4.07021 2.74382Z" fill="white"/>
+                    <path d="M15.7315 6.85958H14.209C13.9408 6.06311 13.1874 5.48767 12.3017 5.48767C11.416 5.48767 10.6627 6.06311 10.3945 6.85958H0.64042C0.286738 6.85958 0 7.14632 0 7.5C0 7.85368 0.286738 8.14042 0.64042 8.14042H10.3945C10.6627 8.93689 11.416 9.51233 12.3017 9.51233C13.1875 9.51233 13.9408 8.93689 14.209 8.14042H15.7316C16.0853 8.14042 16.372 7.85368 16.372 7.5C16.372 7.14632 16.0853 6.85958 15.7315 6.85958ZM12.3017 8.23149C11.8984 8.23149 11.5703 7.90334 11.5703 7.5C11.5703 7.09666 11.8984 6.76851 12.3017 6.76851C12.7051 6.76851 13.0332 7.09666 13.0332 7.5C13.0332 7.90334 12.7051 8.23149 12.3017 8.23149Z" fill="white"/>
+                    <path d="M15.7315 12.3473H8.72133C8.45317 11.5508 7.69982 10.9753 6.81407 10.9753C5.92833 10.9753 5.17498 11.5508 4.90682 12.3473H0.64042C0.286738 12.3473 0 12.634 0 12.9877C0 13.3414 0.286738 13.6281 0.64042 13.6281H4.90682C5.17498 14.4246 5.92833 15 6.81407 15C7.69982 15 8.45317 14.4246 8.72133 13.6281H15.7316C16.0853 13.6281 16.372 13.3414 16.372 12.9877C16.372 12.634 16.0853 12.3473 15.7315 12.3473ZM6.81407 13.7192C6.41074 13.7192 6.08258 13.3911 6.08258 12.9877C6.08258 12.5844 6.41074 12.2562 6.81407 12.2562C7.21741 12.2562 7.54556 12.5843 7.54556 12.9877C7.54556 13.391 7.21741 13.7192 6.81407 13.7192Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="food-wrapper">
+                <ul class="food__list">
+                    <li class="food__item">
+                        <a class="food__link food__link--active" href="#">Холодные&nbsp;закуски</a>
+                    </li>
+                    <li class="food__item">
+                        <a class="food__link" href="#">Салаты</a>
+                    </li>
+                    <li class="food__item">
+                        <a class="food__link" href="#">Горячие&nbsp;закуски</a>
+                    </li>
+                    <li class="food__item">
+                        <a class="food__link" href="#">Супы</a>
+                    </li>
+                    <li class="food__item">
+                        <a class="food__link" href="#">Паста</a>
+                    </li>
+                    <li class="food__item">
+                        <a class="food__link" href="#">Основные&nbsp;блюда</a>
+                    </li>
+                    <li class="food__item">
+                        <a class="food__link" href="#">Пицца</a>
+                    </li>
+                    <li class="food__item">
+                        <a class="food__link" href="#">Блюда&nbsp;на&nbsp;гриле</a>
+                    </li>
+                    <li class="food__item">
+                        <a class="food__link" href="#">Морепродукты</a>
+                    </li>
+                    <li class="food__item">
+                        <a class="food__link" href="#">Гарниры</a>
+                    </li>
+                    <li class="food__item">
+                        <a class="food__link" href="#">Соусы</a>
+                    </li>
+                    <li class="food__item">
+                        <a class="food__link" href="#">Десерты</a>
+                    </li>
+                </ul>
             </div>
         </div>
+        <div class="catalog__menu"></div>
     </section>
 
     <footer class="footer">
@@ -227,10 +175,10 @@
                 <nav class="footer__nav">
                     <ul class="footer__nav-list">
                         <li class="footer__nav-item">
-                            <a href="" class="footer__nav-link">Главная</a>
+                            <a href="index.html" class="footer__nav-link">Главная</a>
                         </li>
                         <li class="footer__nav-item">
-                            <a href="menu-main.html" class="footer__nav-link">Меню</a>
+                            <a href="" class="footer__nav-link">Меню</a>
                         </li>
                         <li class="footer__nav-item">
                             <a href="" class="footer__nav-link">Акции</a>
