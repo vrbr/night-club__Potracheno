@@ -21,10 +21,10 @@
     text-transform: uppercase;
     color: #505050;
 }
-.tab + .tab {
+.tab-link + .tab-link {
     padding-left: 16px;
 }
-.tab--active {
+.tab.tab--active {
     color: #FFFFFF;
 }
 
@@ -169,6 +169,9 @@
     }
 }
 @media (min-width: 1024px) {
+    .tab-link + .tab-link {
+        padding-left: 20px;
+    }
     .catalog__filter {
         padding-left: 50px;
         padding-right: 50px;
@@ -181,6 +184,9 @@
     }
 }
 @media (min-width: 1200px) {
+    .tab-link + .tab-link {
+        padding-left: 39px;
+    }
     .catalog__filter {
         width: 1110px;
         margin: 0 auto;

@@ -110,8 +110,12 @@
         <div class="catalog__filter">
             <div class="tabs-wrapper">
                 <div class="tabs">
-                    <a href="#filter-1" class="tab tab--active">Основное Меню</a>
-                    <a href="#filter-2" class="tab">Барная карта</a>
+                    <a class="tab-link filter-1">
+                        <span class="tab tab--active">Основное Меню</span>
+                    </a>
+                    <a class="tab-link filter-2">
+                        <span class="tab">Барная карта</span>
+                    </a>
                 </div>
             </div>
             <div class="search-wrapper">
@@ -172,253 +176,448 @@
                 </ul>
             </div>
         </div>
-        <div class="catalog__menu">
-            <div class="container">
-                <div class="catalog__inner">
-                    <div class="product-item__wrapper popular">
-                        <a class="product-item__link" href="">
-                            <img src="img/catalog/salad/tiger-prawn-salad-01.jpg" alt="" class="product-item__img">
-                        </a>
-                        <span class="product-item__mark"></span>
-                        <div class="product-item__container">
-                            <h3 class="product-item__title">Салат с тигровыми креветками</h3>
-                            <div class="product-item__filling">
-                                <div class="product-item__info">
-                                    <span class="product-item__calories">Ккал: 245</span>
-                                    <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+
+        <!--еда-->
+        <div class="food-menu menu--active">
+            <div class="catalog__menu">
+                <div class="container">
+                    <div class="catalog__inner">
+                        <div class="product-item__wrapper popular">
+                            <a class="product-item__link" href="">
+                                <img src="img/catalog/salad/tiger-prawn-salad-01.jpg" alt="" class="product-item__img">
+                            </a>
+                            <span class="product-item__mark"></span>
+                            <div class="product-item__container">
+                                <h3 class="product-item__title">Салат с тигровыми креветками</h3>
+                                <div class="product-item__filling">
+                                    <div class="product-item__info">
+                                        <span class="product-item__calories">Ккал: 245</span>
+                                        <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                                    </div>
+                                    <p class="product-item__price">359₽<span>/100г.</span></p>
                                 </div>
-                                <p class="product-item__price">359₽<span>/100г.</span></p>
+                            </div>
+                            <div class="product-item__more">
+                                <a href="#" class="product-item__more-details">подробнее</a>
+                                <button class="product-item__more-basket">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
-                        <div class="product-item__more">
-                            <a href="#" class="product-item__more-details">подробнее</a>
-                            <button class="product-item__more-basket">
-                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-item__wrapper chef">
-                        <a class="product-item__link" href="">
-                            <img src="img/catalog/salad/parmigiano-salad-01.jpg" alt="" class="product-item__img">
-                        </a>
-                        <span class="product-item__mark"></span>
-                        <div class="product-item__container">
-                            <h3 class="product-item__title">Салат пармиджано</h3>
-                            <div class="product-item__filling">
-                                <div class="product-item__info">
-                                    <span class="product-item__calories">Ккал: 245</span>
-                                    <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                        <div class="product-item__wrapper chef">
+                            <a class="product-item__link" href="">
+                                <img src="img/catalog/salad/parmigiano-salad-01.jpg" alt="" class="product-item__img">
+                            </a>
+                            <span class="product-item__mark"></span>
+                            <div class="product-item__container">
+                                <h3 class="product-item__title">Салат пармиджано</h3>
+                                <div class="product-item__filling">
+                                    <div class="product-item__info">
+                                        <span class="product-item__calories">Ккал: 245</span>
+                                        <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                                    </div>
+                                    <p class="product-item__price">239₽<span>/250г.</span></p>
                                 </div>
-                                <p class="product-item__price">239₽<span>/250г.</span></p>
+                            </div>
+                            <div class="product-item__more">
+                                <a href="#" class="product-item__more-details">подробнее</a>
+                                <button class="product-item__more-basket">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
-                        <div class="product-item__more">
-                            <a href="#" class="product-item__more-details">подробнее</a>
-                            <button class="product-item__more-basket">
-                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-item__wrapper">
-                        <a class="product-item__link" href="">
-                            <img src="img/catalog/salad/caesar-salad-01.jpg" alt="" class="product-item__img">
-                        </a>
-                        <span class="product-item__mark"></span>
-                        <div class="product-item__container">
-                            <h3 class="product-item__title">Салат цезарь</h3>
-                            <div class="product-item__filling">
-                                <div class="product-item__info">
-                                    <span class="product-item__calories">Ккал: 245</span>
-                                    <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                        <div class="product-item__wrapper">
+                            <a class="product-item__link" href="">
+                                <img src="img/catalog/salad/caesar-salad-01.jpg" alt="" class="product-item__img">
+                            </a>
+                            <span class="product-item__mark"></span>
+                            <div class="product-item__container">
+                                <h3 class="product-item__title">Салат цезарь</h3>
+                                <div class="product-item__filling">
+                                    <div class="product-item__info">
+                                        <span class="product-item__calories">Ккал: 245</span>
+                                        <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                                    </div>
+                                    <p class="product-item__price">659₽<span>/1000г.</span></p>
                                 </div>
-                                <p class="product-item__price">659₽<span>/1000г.</span></p>
+                            </div>
+                            <div class="product-item__more">
+                                <a href="#" class="product-item__more-details">подробнее</a>
+                                <button class="product-item__more-basket">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
-                        <div class="product-item__more">
-                            <a href="#" class="product-item__more-details">подробнее</a>
-                            <button class="product-item__more-basket">
-                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-item__wrapper">
-                        <a class="product-item__link" href="">
-                            <img src="img/catalog/salad/tiger-prawn-salad-01.jpg" alt="" class="product-item__img">
-                        </a>
-                        <span class="product-item__mark"></span>
-                        <div class="product-item__container">
-                            <h3 class="product-item__title">Салат с тигровыми креветками</h3>
-                            <div class="product-item__filling">
-                                <div class="product-item__info">
-                                    <span class="product-item__calories">Ккал: 245</span>
-                                    <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                        <div class="product-item__wrapper">
+                            <a class="product-item__link" href="">
+                                <img src="img/catalog/salad/tiger-prawn-salad-01.jpg" alt="" class="product-item__img">
+                            </a>
+                            <span class="product-item__mark"></span>
+                            <div class="product-item__container">
+                                <h3 class="product-item__title">Салат с тигровыми креветками</h3>
+                                <div class="product-item__filling">
+                                    <div class="product-item__info">
+                                        <span class="product-item__calories">Ккал: 245</span>
+                                        <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                                    </div>
+                                    <p class="product-item__price">359₽<span>/100г.</span></p>
                                 </div>
-                                <p class="product-item__price">359₽<span>/100г.</span></p>
+                            </div>
+                            <div class="product-item__more">
+                                <a href="#" class="product-item__more-details">подробнее</a>
+                                <button class="product-item__more-basket">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
-                        <div class="product-item__more">
-                            <a href="#" class="product-item__more-details">подробнее</a>
-                            <button class="product-item__more-basket">
-                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-item__wrapper">
-                        <a class="product-item__link" href="">
-                            <img src="img/catalog/salad/tiger-prawn-salad-01.jpg" alt="" class="product-item__img">
-                        </a>
-                        <span class="product-item__mark"></span>
-                        <div class="product-item__container">
-                            <h3 class="product-item__title">Салат с тигровыми креветками</h3>
-                            <div class="product-item__filling">
-                                <div class="product-item__info">
-                                    <span class="product-item__calories">Ккал: 245</span>
-                                    <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                        <div class="product-item__wrapper">
+                            <a class="product-item__link" href="">
+                                <img src="img/catalog/salad/tiger-prawn-salad-01.jpg" alt="" class="product-item__img">
+                            </a>
+                            <span class="product-item__mark"></span>
+                            <div class="product-item__container">
+                                <h3 class="product-item__title">Салат с тигровыми креветками</h3>
+                                <div class="product-item__filling">
+                                    <div class="product-item__info">
+                                        <span class="product-item__calories">Ккал: 245</span>
+                                        <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                                    </div>
+                                    <p class="product-item__price">359₽<span>/100г.</span></p>
                                 </div>
-                                <p class="product-item__price">359₽<span>/100г.</span></p>
+                            </div>
+                            <div class="product-item__more">
+                                <a href="#" class="product-item__more-details">подробнее</a>
+                                <button class="product-item__more-basket">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
-                        <div class="product-item__more">
-                            <a href="#" class="product-item__more-details">подробнее</a>
-                            <button class="product-item__more-basket">
-                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-item__wrapper">
-                        <a class="product-item__link" href="">
-                            <img src="img/catalog/salad/parmigiano-salad-01.jpg" alt="" class="product-item__img">
-                        </a>
-                        <span class="product-item__mark"></span>
-                        <div class="product-item__container">
-                            <h3 class="product-item__title">Салат пармиджано</h3>
-                            <div class="product-item__filling">
-                                <div class="product-item__info">
-                                    <span class="product-item__calories">Ккал: 245</span>
-                                    <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                        <div class="product-item__wrapper">
+                            <a class="product-item__link" href="">
+                                <img src="img/catalog/salad/parmigiano-salad-01.jpg" alt="" class="product-item__img">
+                            </a>
+                            <span class="product-item__mark"></span>
+                            <div class="product-item__container">
+                                <h3 class="product-item__title">Салат пармиджано</h3>
+                                <div class="product-item__filling">
+                                    <div class="product-item__info">
+                                        <span class="product-item__calories">Ккал: 245</span>
+                                        <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                                    </div>
+                                    <p class="product-item__price">239₽<span>/250г.</span></p>
                                 </div>
-                                <p class="product-item__price">239₽<span>/250г.</span></p>
+                            </div>
+                            <div class="product-item__more">
+                                <a href="#" class="product-item__more-details">подробнее</a>
+                                <button class="product-item__more-basket">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
-                        <div class="product-item__more">
-                            <a href="#" class="product-item__more-details">подробнее</a>
-                            <button class="product-item__more-basket">
-                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-item__wrapper">
-                        <a class="product-item__link" href="">
-                            <img src="img/catalog/salad/caesar-salad-01.jpg" alt="" class="product-item__img">
-                        </a>
-                        <span class="product-item__mark"></span>
-                        <div class="product-item__container">
-                            <h3 class="product-item__title">Салат цезарь</h3>
-                            <div class="product-item__filling">
-                                <div class="product-item__info">
-                                    <span class="product-item__calories">Ккал: 245</span>
-                                    <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                        <div class="product-item__wrapper">
+                            <a class="product-item__link" href="">
+                                <img src="img/catalog/salad/caesar-salad-01.jpg" alt="" class="product-item__img">
+                            </a>
+                            <span class="product-item__mark"></span>
+                            <div class="product-item__container">
+                                <h3 class="product-item__title">Салат цезарь</h3>
+                                <div class="product-item__filling">
+                                    <div class="product-item__info">
+                                        <span class="product-item__calories">Ккал: 245</span>
+                                        <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                                    </div>
+                                    <p class="product-item__price">659₽<span>/1000г.</span></p>
                                 </div>
-                                <p class="product-item__price">659₽<span>/1000г.</span></p>
+                            </div>
+                            <div class="product-item__more">
+                                <a href="#" class="product-item__more-details">подробнее</a>
+                                <button class="product-item__more-basket">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
-                        <div class="product-item__more">
-                            <a href="#" class="product-item__more-details">подробнее</a>
-                            <button class="product-item__more-basket">
-                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-item__wrapper">
-                        <a class="product-item__link" href="">
-                            <img src="img/catalog/salad/tiger-prawn-salad-01.jpg" alt="" class="product-item__img">
-                        </a>
-                        <span class="product-item__mark"></span>
-                        <div class="product-item__container">
-                            <h3 class="product-item__title">Салат с тигровыми креветками</h3>
-                            <div class="product-item__filling">
-                                <div class="product-item__info">
-                                    <span class="product-item__calories">Ккал: 245</span>
-                                    <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                        <div class="product-item__wrapper">
+                            <a class="product-item__link" href="">
+                                <img src="img/catalog/salad/tiger-prawn-salad-01.jpg" alt="" class="product-item__img">
+                            </a>
+                            <span class="product-item__mark"></span>
+                            <div class="product-item__container">
+                                <h3 class="product-item__title">Салат с тигровыми креветками</h3>
+                                <div class="product-item__filling">
+                                    <div class="product-item__info">
+                                        <span class="product-item__calories">Ккал: 245</span>
+                                        <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                                    </div>
+                                    <p class="product-item__price">359₽<span>/100г.</span></p>
                                 </div>
-                                <p class="product-item__price">359₽<span>/100г.</span></p>
+                            </div>
+                            <div class="product-item__more">
+                                <a href="#" class="product-item__more-details">подробнее</a>
+                                <button class="product-item__more-basket">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
-                        <div class="product-item__more">
-                            <a href="#" class="product-item__more-details">подробнее</a>
-                            <button class="product-item__more-basket">
-                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-item__wrapper">
-                        <a class="product-item__link" href="">
-                            <img src="img/catalog/salad/tiger-prawn-salad-01.jpg" alt="" class="product-item__img">
-                        </a>
-                        <span class="product-item__mark"></span>
-                        <div class="product-item__container">
-                            <h3 class="product-item__title">Салат с тигровыми креветками</h3>
-                            <div class="product-item__filling">
-                                <div class="product-item__info">
-                                    <span class="product-item__calories">Ккал: 245</span>
-                                    <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                        <div class="product-item__wrapper">
+                            <a class="product-item__link" href="">
+                                <img src="img/catalog/salad/tiger-prawn-salad-01.jpg" alt="" class="product-item__img">
+                            </a>
+                            <span class="product-item__mark"></span>
+                            <div class="product-item__container">
+                                <h3 class="product-item__title">Салат с тигровыми креветками</h3>
+                                <div class="product-item__filling">
+                                    <div class="product-item__info">
+                                        <span class="product-item__calories">Ккал: 245</span>
+                                        <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                                    </div>
+                                    <p class="product-item__price">359₽<span>/100г.</span></p>
                                 </div>
-                                <p class="product-item__price">359₽<span>/100г.</span></p>
+                            </div>
+                            <div class="product-item__more">
+                                <a href="#" class="product-item__more-details">подробнее</a>
+                                <button class="product-item__more-basket">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
-                        <div class="product-item__more">
-                            <a href="#" class="product-item__more-details">подробнее</a>
-                            <button class="product-item__more-basket">
-                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-item__wrapper">
-                        <a class="product-item__link" href="">
-                            <img src="img/catalog/salad/parmigiano-salad-01.jpg" alt="" class="product-item__img">
-                        </a>
-                        <span class="product-item__mark"></span>
-                        <div class="product-item__container">
-                            <h3 class="product-item__title">Салат пармиджано</h3>
-                            <div class="product-item__filling">
-                                <div class="product-item__info">
-                                    <span class="product-item__calories">Ккал: 245</span>
-                                    <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                        <div class="product-item__wrapper">
+                            <a class="product-item__link" href="">
+                                <img src="img/catalog/salad/parmigiano-salad-01.jpg" alt="" class="product-item__img">
+                            </a>
+                            <span class="product-item__mark"></span>
+                            <div class="product-item__container">
+                                <h3 class="product-item__title">Салат пармиджано</h3>
+                                <div class="product-item__filling">
+                                    <div class="product-item__info">
+                                        <span class="product-item__calories">Ккал: 245</span>
+                                        <span class="product-item__pfc">БЖУ: 19,8/12,5/0</span>
+                                    </div>
+                                    <p class="product-item__price">239₽<span>/250г.</span></p>
                                 </div>
-                                <p class="product-item__price">239₽<span>/250г.</span></p>
                             </div>
-                        </div>
-                        <div class="product-item__more">
-                            <a href="#" class="product-item__more-details">подробнее</a>
-                            <button class="product-item__more-basket">
-                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
+                            <div class="product-item__more">
+                                <a href="#" class="product-item__more-details">подробнее</a>
+                                <button class="product-item__more-basket">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="catalog__menu-more">
+                <button class="catalog__more">Показать еще</button>
+            </div>
         </div>
-        <button class="catalog__more">Показать еще</button>
+        
+        <!--напитки-->
+        <div class="drink-menu">
+            <div class="catalog__menu">
+                <div class="container">
+                    <div class="catalog__inner">
+                        <div class="product-item__wrapper">
+                            <a class="product-item__link" href="">
+                                <img src="img/catalog/shot/kaif.jpg" alt="" class="product-item__img">
+                            </a>
+                            <div class="product-item__container">
+                                <h3 class="product-item__title">Kaif</h3>
+                                <div class="product-item__filling">
+                                    <div class="product-item__info">
+                                        <span>Martini Bianco, ликер Blue Curacao, сок лимона, сироп, белок</span>
+                                    </div>
+                                    <p class="product-item__price">239₽<span>/100г.</span></p>
+                                </div>
+                            </div>
+                            <div class="product-item__more">
+                                <a href="#" class="product-item__more-details">подробнее</a>
+                                <button class="product-item__more-basket">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-item__wrapper">
+                            <a class="product-item__link" href="">
+                                <img src="img/catalog/shot/old-german.jpg" alt="" class="product-item__img">
+                            </a>
+                            <div class="product-item__container">
+                                <h3 class="product-item__title">Старый немец</h3>
+                                <div class="product-item__filling">
+                                    <div class="product-item__info">
+                                        <span>Olmeca Chocolate, Martini Bitter, Cola, сироп</span>
+                                    </div>
+                                    <p class="product-item__price">359₽<span>/100г.</span></p>
+                                </div>
+                            </div>
+                            <div class="product-item__more">
+                                <a href="#" class="product-item__more-details">подробнее</a>
+                                <button class="product-item__more-basket">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-item__wrapper">
+                            <a class="product-item__link" href="">
+                                <img src="img/catalog/shot/clover-club.jpg" alt="" class="product-item__img">
+                            </a>
+                            <div class="product-item__container">
+                                <h3 class="product-item__title">Кловер клаб</h3>
+                                <div class="product-item__filling">
+                                    <div class="product-item__info">
+                                        <span>Джин Barrister, сироп, сок лимона, белок</span>
+                                    </div>
+                                    <p class="product-item__price">329₽<span>/100г.</span></p>
+                                </div>
+                            </div>
+                            <div class="product-item__more">
+                                <a href="#" class="product-item__more-details">подробнее</a>
+                                <button class="product-item__more-basket">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-item__wrapper">
+                            <a class="product-item__link" href="">
+                                <img src="img/catalog/shot/kaif.jpg" alt="" class="product-item__img">
+                            </a>
+                            <div class="product-item__container">
+                                <h3 class="product-item__title">Kaif</h3>
+                                <div class="product-item__filling">
+                                    <div class="product-item__info">
+                                        <span>Martini Bianco, ликер Blue Curacao, сок лимона, сироп, белок</span>
+                                    </div>
+                                    <p class="product-item__price">239₽<span>/100г.</span></p>
+                                </div>
+                            </div>
+                            <div class="product-item__more">
+                                <a href="#" class="product-item__more-details">подробнее</a>
+                                <button class="product-item__more-basket">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-item__wrapper">
+                            <a class="product-item__link" href="">
+                                <img src="img/catalog/shot/old-german.jpg" alt="" class="product-item__img">
+                            </a>
+                            <div class="product-item__container">
+                                <h3 class="product-item__title">Старый немец</h3>
+                                <div class="product-item__filling">
+                                    <div class="product-item__info">
+                                        <span>Olmeca Chocolate, Martini Bitter, Cola, сироп</span>
+                                    </div>
+                                    <p class="product-item__price">359₽<span>/100г.</span></p>
+                                </div>
+                            </div>
+                            <div class="product-item__more">
+                                <a href="#" class="product-item__more-details">подробнее</a>
+                                <button class="product-item__more-basket">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-item__wrapper">
+                            <a class="product-item__link" href="">
+                                <img src="img/catalog/shot/clover-club.jpg" alt="" class="product-item__img">
+                            </a>
+                            <div class="product-item__container">
+                                <h3 class="product-item__title">Кловер клаб</h3>
+                                <div class="product-item__filling">
+                                    <div class="product-item__info">
+                                        <span>Джин Barrister, сироп, сок лимона, белок</span>
+                                    </div>
+                                    <p class="product-item__price">329₽<span>/100г.</span></p>
+                                </div>
+                            </div>
+                            <div class="product-item__more">
+                                <a href="#" class="product-item__more-details">подробнее</a>
+                                <button class="product-item__more-basket">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-item__wrapper">
+                            <a class="product-item__link" href="">
+                                <img src="img/catalog/shot/kaif.jpg" alt="" class="product-item__img">
+                            </a>
+                            <div class="product-item__container">
+                                <h3 class="product-item__title">Kaif</h3>
+                                <div class="product-item__filling">
+                                    <div class="product-item__info">
+                                        <span>Martini Bianco, ликер Blue Curacao, сок лимона, сироп, белок</span>
+                                    </div>
+                                    <p class="product-item__price">239₽<span>/100г.</span></p>
+                                </div>
+                            </div>
+                            <div class="product-item__more">
+                                <a href="#" class="product-item__more-details">подробнее</a>
+                                <button class="product-item__more-basket">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-item__wrapper">
+                            <a class="product-item__link" href="">
+                                <img src="img/catalog/shot/old-german.jpg" alt="" class="product-item__img">
+                            </a>
+                            <div class="product-item__container">
+                                <h3 class="product-item__title">Старый немец</h3>
+                                <div class="product-item__filling">
+                                    <div class="product-item__info">
+                                        <span>Olmeca Chocolate, Martini Bitter, Cola, сироп</span>
+                                    </div>
+                                    <p class="product-item__price">359₽<span>/100г.</span></p>
+                                </div>
+                            </div>
+                            <div class="product-item__more">
+                                <a href="#" class="product-item__more-details">подробнее</a>
+                                <button class="product-item__more-basket">
+                                    <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6M10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__menu-more">
+                <button class="catalog__more">Показать еще</button>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">

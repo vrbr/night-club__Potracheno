@@ -1,3 +1,11 @@
+.food-menu,
+.drink-menu  {
+    display: none;
+}
+.food-menu.menu--active,
+.drink-menu.menu--active {
+    display: block;
+}
 .catalog__inner {
     display: flex;
     flex-wrap: wrap;
