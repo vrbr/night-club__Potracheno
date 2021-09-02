@@ -7,7 +7,6 @@
     <title>Ночной клуб "Потрачено"</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,7 +22,7 @@
                 </picture>
 
                 <div class="menu-desk__nav">
-                    <a href="" class="menu-desk__link">Главная</a>
+                    <a href="index.html" class="menu-desk__link">Главная</a>
                     <a href="menu-main.html" class="menu-desk__link">Меню</a>
                     <div class="dropdown">
                         <button class="dropdown__btn">Еще...</button>
@@ -50,7 +49,7 @@
                     <div class="menu__popup">
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="" class="menu__link">Главная</a>
+                                <a href="index.html" class="menu__link">Главная</a>
                             </li>
                             <li class="menu__item">
                                 <a href="menu-main.html" class="menu__link">Меню</a>
@@ -69,149 +68,80 @@
         </div>
     </header>
 
-    <section class="intro">
-        <div class="intro__container">
-            <picture>
-                <source media="(min-width: 1024px)" srcset="img/intro-desk.svg">
-                <img src="img/intro-mob.svg" alt="">
-            </picture>
-            <div class="intro__links">
-                <a class="intro__link-reservation" href="#">Забронировать столик</a>
-                <a class="intro__link-menu" href="#">посмотреть меню</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="about">
-        <div class="about__container">
-            <h1 class="about__title">О нашем<br><span>заведении</span></h1>
-            <div class="about__inner">
-                <div class="swiper swiper-about mySwiper mySwiper-about">
-                    <a class="about__more" href="#">Подробнее</a>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <source media="(min-width: 1440px)" srcset="img/about/about-slide-1_desk.jpg">
-                            <source media="(min-width: 1024px)" srcset="img/about/about-slide-1_tab.jpg">
-                            <img src="img/about/about-slide-1.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <source media="(min-width: 1440px)" srcset="img/about/about-slide-2_desk.jpg">
-                            <source media="(min-width: 1024px)" srcset="img/about/about-slide-2_tab.jpg">
-                            <img src="img/about/about-slide-2.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <source media="(min-width: 1440px)" srcset="img/about/about-slide-3_desk.jpg">
-                            <source media="(min-width: 1024px)" srcset="img/about/about-slide-3_tab.jpg">
-                            <img src="img/about/about-slide-3.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <source media="(min-width: 1440px)" srcset="img/about/about-slide-4_desk.jpg">
-                            <source media="(min-width: 1024px)" srcset="img/about/about-slide-4_tab.jpg">
-                            <img src="img/about/about-slide-4.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <source media="(min-width: 1440px)" srcset="img/about/about-slide-5_desk.jpg">
-                            <source media="(min-width: 1024px)" srcset="img/about/about-slide-5_tab.jpg">
-                            <img src="img/about/about-slide-5.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper__buttons">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-                <div class="about__info-text">
-                    <p class="about__text">С другой стороны сложившаяся структура организации требуют определения и уточнения модели развития. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий требуют от нас анализа дальнейших направлений развития.</p>
-                    <p class="about__text">Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров играет важную роль в формировании форм развития.</p>
-                    <a class="about__text-more" href="">Читать больше </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="news">
-        <h1 class="news__title">Новости и акции</h1>
-        <div class="news__inner">
-            <div class="swiper swiper-news mySwiper mySwiper-news">
-                <div class="swiper-wrapper swiper-wrapper-news">
-                    <div class="swiper-slide swiper-slide-news">
-                        <img src="img/news/new-1.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-slide-news">
-                        <img src="img/news/new-2.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-slide-news">
-                        <img src="img/news/new-3.png" alt="">
-                    </div>
-                    <div class="swiper-slide swiper-slide-news">
-                        <img src="img/news/new-4.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="preview-menu">
+    <section class="photo-reports">
         <div class="container">
-            <h2 class="preview-menu__title">Что у нас можно<br><span>покушать?</span></h2>
-            <picture>
-                <source media="(min-width: 1024px)" srcset="">
-                <img src="img/preview-menu.png" alt="">
-            </picture>
-            <p class="preview-menu__info">С другой стороны сложившаяся структура организации требуют определения и уточнения модели развития. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий требуют от нас анализа дальнейших направлений развития.</p>
-            <a href="" class="preview-menu__link">Смотреть меню</a>
-        </div>
-    </section>
-
-    <section class="contacts">
-        <div class="container">
-            <div class="contacts-info__wrapper">
-                <h2 class="contacts__title">Контакты</h2>
-                <p class="contacts-info__title">Контактные данные</p>
-                <ul class="contacts-info__social-list">
-                    <li class="contacts-info__social-item">
-                        <a class="contacts-info__social-link social-phone" href="tel:+79999999999">
-                            +7 (999) 999-99-99
+            <div class="photo-reports__wrapper">
+                <h1 class="photo-reports__title">Фотоотчеты</h1>
+                <div class="photo-reports__block haloween__block">
+                    <h3 class="reports__title">haloween party 2021</h3>
+                    <div class="haloween__photos">
+                        <a class="haloween__photo" href="">
+                            <img src="img/photo-reports/haloween/01.jpg" alt="">
                         </a>
-                    </li>
-                    <li class="contacts-info__social-item">
-                        <a class="contacts-info__social-link social-mail" href="mailto:potracheno@mail.ru">
-                            potracheno@mail.ru
+                        <a class="haloween__photo" href="">
+                            <img src="img/photo-reports/haloween/02.jpg" alt="">
                         </a>
-                    </li>
-                    <li class="contacts-info__social-item">
-                        <a class="contacts-info__social-link social-location">
-                            г. Самара, ул. Ерошевского, 70
+                        <a class="haloween__photo" href="">
+                            <img src="img/photo-reports/haloween/03.jpg" alt="">
                         </a>
-                    </li>
-                </ul>
-                <p class="contacts-info__title">Забронировать столик</p>
-                <button class="contacts-info__reserve-btn">Онлайн бронирование</button>
-                <div class="contact-info__messenger">
-                    <ul class="contact-info__messenger-list">
-                        <li class="contact-info__messenger-item">
-                            <a class="contact-info__messenger-link messenger-insta" href="#">
-                            </a>
+                        <a class="haloween__photo" href="">
+                            <img src="img/photo-reports/haloween/04.jpg" alt="">
+                        </a>
+                        <a class="haloween__photo" href="">
+                            <img src="img/photo-reports/haloween/05.jpg" alt="">
+                        </a>
+                        <a class="haloween__photo" href="">
+                            <img src="img/photo-reports/haloween/06.jpg" alt="">
+                        </a>
+                        <a class="haloween__photo" href="">
+                            <img src="img/photo-reports/haloween/07.jpg" alt="">
+                        </a>
+                        <a class="haloween__photo" href="">
+                            <img src="img/photo-reports/haloween/08.jpg" alt="">
+                        </a>
+                        <a class="haloween__photo" href="">
+                            <img src="img/photo-reports/haloween/09.jpg" alt="">
+                        </a>
+                        <a class="haloween__photo" href="">
+                            <img src="img/photo-reports/haloween/10.jpg" alt="">
+                        </a>
+                        <a class="haloween__photo" href="">
+                            <img src="img/photo-reports/haloween/11.jpg" alt="">
+                        </a>
+                        <a class="haloween__photo" href="">
+                            <img src="img/photo-reports/haloween/12.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="photo-reports__pagination">
+                    <ul class="photo-reports__pagination-list">
+                        <li class="photo-reports__pagination-item">
+                            <a class="photo-reports__pagination-link pagination-link--active">1</a>
                         </li>
-                        <li class="contact-info__messenger-item">
-                            <a class="contact-info__messenger-link messenger-telega" href="#"></a>
+                        <li class="photo-reports__pagination-item">
+                            <a href="" class="photo-reports__pagination-link">2</a>
                         </li>
-                        <li class="contact-info__messenger-item">
-                            <a class="contact-info__messenger-link messenger-viber" href="#"></a>
+                        <li class="photo-reports__pagination-item">
+                            <a href="" class="photo-reports__pagination-link">3</a>
+                        </li>
+                        <li class="photo-reports__pagination-item">
+                            <a href="" class="photo-reports__pagination-link">4</a>
+                        </li>
+                        <li class="photo-reports__pagination-item">
+                            <a href="" class="photo-reports__pagination-link">5</a>
+                        </li>
+                        <li class="photo-reports__pagination-item">
+                            <a href="" class="photo-reports__pagination-link">6</a>
+                        </li>
+                        <li class="photo-reports__pagination-item">
+                            <a href="" class="photo-reports__pagination-link">7</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="contacts-map__wrapper">
-                <a href="#" class="contacts-map__map">
-                    <img src="img/map.jpg" alt="">
-                </a>
-                <p class="contacts-map__mode">Режим работы <span>Пт-Сб 21:00-8:00</span></p>
-            </div>
         </div>
     </section>
-
+    
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
@@ -227,7 +157,7 @@
                 <nav class="footer__nav">
                     <ul class="footer__nav-list">
                         <li class="footer__nav-item">
-                            <a class="footer__nav-link">Главная</a>
+                            <a href="index.html" class="footer__nav-link">Главная</a>
                         </li>
                         <li class="footer__nav-item">
                             <a href="menu-main.html" class="footer__nav-link">Меню</a>
@@ -286,8 +216,6 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/swipers.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
