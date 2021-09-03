@@ -1,4 +1,4 @@
-//swiper
+//swiper-about
 
 const swiperAbout = new Swiper(".mySwiper-about", {
     spaceBetween: 20,
@@ -48,4 +48,27 @@ const swiperMenu = new Swiper(".mySwiper-menu", {
             spaceBetween: 10,
         }
     }
+});
+
+// swiper-interior
+
+const swiperInterior = new Swiper(".mySwiper-interior", {
+    spaceBetween: 20,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+const swiper2Interior = new Swiper(".mySwiper2-interior", {
+    spaceBetween: 20,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    thumbs: {
+        swiper: swiperInterior,
+    },
 });
