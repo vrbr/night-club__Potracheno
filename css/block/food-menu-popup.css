@@ -1,0 +1,356 @@
+.food-menu__popup {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(22, 22, 21, 0.8);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 100;
+}
+.food-menu__popup.open-card {
+    display: block;
+}
+.food-menu__popup-wrapper {
+    margin: 10px auto;
+    width: 300px;
+    background: #161615;
+    background-image: url("../../img/food-menu-popup-bg.png");
+    background-size: contain;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+.food-menu__popup-cart {
+    position: relative;
+}
+.button-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    outline: none;
+    width: 29px;
+    height: 29px;
+    background-color: #CB3B48;
+    border-radius: 50%;
+    box-shadow: 0px 0px 12.0833px #CB3B48;
+}
+.button-close::before,
+.button-close::after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    width: 12px;
+    height: 2px;
+    top: calc(100% - 16px);
+    left: calc(100% - 21px);
+}
+.button-close::before {
+    transform: rotate(45deg);
+}
+.button-close::after {
+    transform: rotate(-45deg);
+}
+.food-menu__popup-img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+.food-menu__popup-wrapper.chef .food-menu__popup-mark {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/chef-mark.png");
+    width: 58px;
+    height: 58px;
+    left: 0;
+    top: 0;
+    background-size: cover;
+}
+.food-menu__popup-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 14px 9px 19px;
+}
+.food-menu__popup-filling {
+    flex: 70%;
+}
+.food-menu__popup-title {
+    margin: 0;
+    padding-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+.food-menu__popup-info {
+    font-size: 12px;
+    line-height: 14px;
+    color: #CB3B48;
+}
+.food-menu__popup-calories {
+    padding-right: 9px;
+}
+.food-menu__popup-price {
+    margin: 0;
+    margin-right: -9px;
+    padding: 6px 6px 6px 10px;
+    flex: 30%;
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 700;
+    background-color: #fff;
+    color: #CB3B48;
+    text-align: right;
+    border-radius: 42px 0 0 42px;
+}
+.food-menu__popup-price span {
+    font-size: 9px;
+    line-height: 11px;
+    font-weight: 400;
+}
+.food-menu__popup-text p {
+    margin: 0;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    font-size: 11px;
+    line-height: 14px;
+}
+.food-menu__popup-category-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 6px;
+}
+.food-menu__popup-category-item {
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #A5344A;
+}
+.food-menu__popup-category-item.vegan {
+    color: #6DAB58;
+}
+.counter-wrapper,
+.food-menu__popup-addcard,
+.food-menu__popup-video {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .food-menu__popup-wrapper {
+        position: fixed;
+        top: calc(50% - 175px);
+        left: calc(50% - 355px);
+        width: 710px;
+        z-index: 100;
+    }
+    .food-menu__popup-wrapper.chef .food-menu__popup-mark {
+        width: 75px;
+        height: 75px;
+        left: -6px;
+        top: -6px;
+    }
+    .food-menu__popup-cart {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+    .food-menu__popup-img {
+        border-radius: 10px 0 0 10px;
+    }
+    .food-menu__popup-container {
+        flex-direction: column;
+        flex-wrap: initial;
+        align-items: flex-start;
+        padding: 22px 44px 28px 15px;
+    }
+    .food-menu__popup-filling {
+        flex: none;
+    }
+    .food-menu__popup-counting {
+        padding-bottom: 18px;
+        order: 3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .food-menu__popup-title {
+        padding-bottom: 25px;
+    }
+    .food-menu__popup-price {
+        flex: none;
+        margin-left: -15px;
+        margin-right: 0px;
+        padding: 6px 12px 6px 15px;
+        border-radius: 0px 42px 42px 0px;
+    }
+    .food-menu__popup-text p {
+        padding-top: 28px;
+        padding-bottom: 48px;
+    }
+    .food-menu__popup-addcard {
+        position: relative;
+        display: block;
+        padding: 10px 11px 10px 38px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: uppercase;
+        background-color: #CB3B48;
+        border: 1px solid #CB3B48;
+        border-radius: 5px;
+    }
+    .food-menu__popup-addcard::before {
+        position: absolute;
+        content: "";
+        background-image: url("../../img/basket.svg");
+        left: 10px;
+        top: 6px;
+        width: 20px;
+        height: 19px;
+        background-size: cover;
+    }
+    .counter-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 65px;
+        height: 22px;
+        color: #818181;
+        text-align: center;
+        font-size: 16px;
+        line-height: 23px;
+        background-color: #fff;
+        border-radius: 6px;
+    }
+    .items__control {
+        width: 17px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.2s ease-in;
+        background-color: #CB3B48;
+        color: #fff;
+        
+    }
+    .items__control[data-action="minus"] {
+        border-radius: 6px 0px 0px 6px;
+    }
+    .items__control[data-action="plus"] {
+        border-radius: 0px 6px 6px 0px;
+    }
+    .food-menu__popup-category-list {
+        order: 4;
+    }
+    .food-menu__popup-video {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 60px;
+    }
+    .food-menu__popup-video::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        background-image: url("../../img/video-icon.png");
+        background-repeat: no-repeat;
+        width: 98px;
+        height: 62px;
+        background-size: contain;
+    }
+}
+@media (min-width: 1440px) {
+    .food-menu__popup-wrapper {
+        width: 1190px;
+        top: calc(50% - 275px);
+        left: calc(50% - 595px);
+    }
+    .food-menu__popup-cart {
+        grid-template-columns: 440px 1fr;
+    }
+    .button-close {
+        width: 36px;
+        height: 36px;
+    }
+    .button-close::before, .button-close::after {
+        width: 20px;
+        top: calc(100% - 19px);
+        left: calc(100% - 28px);
+    }
+    .food-menu__popup-wrapper.chef .food-menu__popup-mark {
+        width: 128px;
+        height: 128px;
+        left: -25px;
+        top: -25px;
+    }
+    .food-menu__popup-video {
+        left: 90px;
+    }
+    .food-menu__popup-video::before {
+        width: 149px;
+        height: 95px;
+        top: -8px;
+        left: -8px;
+    }
+    .food-menu__popup-container {
+        padding: 48px 83px 28px 28px;
+    }
+    .food-menu__popup-title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .food-menu__popup-info {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .food-menu__popup-calories {
+        padding-right: 32px;
+    }
+    .food-menu__popup-text p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .food-menu__popup-price {
+        margin-left: -29px;
+        padding: 6px 31px 6px 29px;
+        font-size: 44px;
+        line-height: 51px;
+    }
+    .food-menu__popup-price span {
+        font-size: 19px;
+        line-height: 23px;
+    } 
+    .food-menu__popup-addcard {
+        padding: 19px 17px 20px 70px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .food-menu__popup-addcard::before {
+        left: 19px;
+        top: 12px;
+        width: 33px;
+        height: 31px;
+    }
+    .counter-wrapper {
+        width: 87px;
+        height: 29px;
+        line-height: 32px;
+    }
+    .food-menu__popup-counting {
+        padding-bottom: 66px;
+    }
+    .items__control {
+        width: 21px;
+        line-height: 28px;
+    }
+    .food-menu__popup-category-list {
+        column-gap: 32px;
+    }
+    .food-menu__popup-category-item {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
