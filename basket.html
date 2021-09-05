@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ночной клуб "Потрачено"</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <picture>
+                    <a class="header__logo">
+                        <source media="(min-width: 1440px)" srcset="img/logo-desk.svg">
+                        <source media="(min-width: 1024px)" srcset="img/logo-desk.svg">
+                        <img src="img/logo-mob.svg" width="174" height="38" alt="">
+                    </a>
+                </picture>
+
+                <div class="menu-desk__nav">
+                    <a href="index.html" class="menu-desk__link">Главная</a>
+                    <a href="menu-main.html" class="menu-desk__link">Меню</a>
+                    <div class="dropdown">
+                        <button class="dropdown__btn">Еще...</button>
+                        <div class="dropdown__content">
+                            <a href="photo-reports.html" class="dropdown__link">Фотоотчеты</a>
+                            <a href="interior.html" class="dropdown__link">Правила заведения</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="header__phone" href="tel:+380999999999">
+                    <img src="img/header-phone.svg" alt="">
+                </a>
+                <button class="header__user">
+                    <img src="img/user.svg" alt="">
+                </button>
+                <button class="header__reservation">Забронировать</button>
+                <nav class="menu">
+                    <button class="menu__btn">
+                        <div class="menu__btn-line line-1"></div>
+                        <div class="menu__btn-line line-2"></div>
+                        <div class="menu__btn-line line-3"></div>
+                    </button>
+                    <div class="menu__popup">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Главная</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="menu-main.html" class="menu__link">Меню</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="photo-reports.html" class="menu__link">Фотоотчеты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="interior.html" class="menu__link">Правила заведения</a>
+                            </li>
+                        </ul>
+                        <button class="menu__reservation">Забронировать столик</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="basket">
+        <div class="container">
+            <h2 class="basket__title">Корзина </h2>
+            <div class="basket__search-wrapper">
+                <div class="basket__search-inner">
+                    <input type="search" class="basket__search-input" placeholder="Найти в корзине">
+                    <button class="basket__search-btn">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.12819 14.854C11.8428 14.854 14.854 11.8428 14.854 8.12819C14.854 4.41361 11.8428 1.40234 8.12819 1.40234C4.41361 1.40234 1.40234 4.41361 1.40234 8.12819C1.40234 11.8428 4.41361 14.854 8.12819 14.854Z" stroke="white" stroke-width="1.16409" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M18.2818 18.2817L13.0435 13.0433" stroke="white" stroke-width="1.16409" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="basket__search-num">
+                    <div class="basket__search-number">В корзине <span>3</span> товара</div>
+                </div>
+                <div class="basket__search-clear">
+                    <button class="basket__search-clear-btn">
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.7221 7.13745C10.4673 7.13745 10.2607 7.34398 10.2607 7.59881V16.3185C10.2607 16.5731 10.4673 16.7798 10.7221 16.7798C10.9769 16.7798 11.1835 16.5731 11.1835 16.3185V7.59881C11.1835 7.34398 10.9769 7.13745 10.7221 7.13745Z" fill="white"/>
+                            <path d="M5.27813 7.13745C5.0233 7.13745 4.81677 7.34398 4.81677 7.59881V16.3185C4.81677 16.5731 5.0233 16.7798 5.27813 16.7798C5.53296 16.7798 5.73949 16.5731 5.73949 16.3185V7.59881C5.73949 7.34398 5.53296 7.13745 5.27813 7.13745Z" fill="white"/>
+                            <path d="M1.31033 5.86488V17.2317C1.31033 17.9036 1.55669 18.5345 1.98704 18.9872C2.41542 19.4412 3.01158 19.6989 3.63549 19.7H12.3645C12.9886 19.6989 13.5848 19.4412 14.013 18.9872C14.4433 18.5345 14.6897 17.9036 14.6897 17.2317V5.86488C15.5452 5.6378 16.0995 4.81133 15.9851 3.93349C15.8705 3.05583 15.1227 2.3993 14.2375 2.39912H11.8754V1.82242C11.8781 1.33745 11.6863 0.871772 11.343 0.529179C10.9997 0.186766 10.5333 -0.00390417 10.0484 6.06185e-05H5.95165C5.46668 -0.00390417 5.00028 0.186766 4.65697 0.529179C4.31365 0.871772 4.1219 1.33745 4.1246 1.82242V2.39912H1.76249C0.877266 2.3993 0.129543 3.05583 0.0149251 3.93349C-0.0995129 4.81133 0.454836 5.6378 1.31033 5.86488ZM12.3645 18.7773H3.63549C2.84668 18.7773 2.23304 18.0997 2.23304 17.2317V5.90543H13.767V17.2317C13.767 18.0997 13.1533 18.7773 12.3645 18.7773ZM5.04732 1.82242C5.04425 1.58219 5.13869 1.35097 5.30917 1.18139C5.47948 1.0118 5.71124 0.918629 5.95165 0.922774H10.0484C10.2888 0.918629 10.5205 1.0118 10.6908 1.18139C10.8613 1.35079 10.9557 1.58219 10.9527 1.82242V2.39912H5.04732V1.82242ZM1.76249 3.32183H14.2375C14.6962 3.32183 15.0679 3.69362 15.0679 4.15227C15.0679 4.61092 14.6962 4.98271 14.2375 4.98271H1.76249C1.30384 4.98271 0.932052 4.61092 0.932052 4.15227C0.932052 3.69362 1.30384 3.32183 1.76249 3.32183Z" fill="white"/>
+                            <path d="M8.00005 7.13745C7.74523 7.13745 7.5387 7.34398 7.5387 7.59881V16.3185C7.5387 16.5731 7.74523 16.7798 8.00005 16.7798C8.25488 16.7798 8.46141 16.5731 8.46141 16.3185V7.59881C8.46141 7.34398 8.25488 7.13745 8.00005 7.13745Z" fill="white"/>
+                        </svg>
+                        <span>Очистить корзину</span>
+                    </button>
+                </div>
+            </div>
+            <div class="basket-carts">
+                <div class="basket-carts__body">
+                    <div class="basket-cart">
+                        <div class="basket-cart__item">
+                            <div class="basket-cart__item-top">
+                                <button class="basket-cart__button-close"></button>
+                                <div class="basket-cart__img">
+                                    <img src="img/basket/parmigiano-salad.jpg" alt="">
+                                </div>
+                                <div class="item__desc">
+                                    <h3 class="item__desc-title">Салат пармиджано</h3>
+                                    <div class="item__desc-info">
+                                        <span class="item__desc-calories">Ккал: 245</span>
+                                        <span class="item__desc-pfc">БЖУ: 19,8/12,5/0</span>
+                                    </div>
+                                    <div class="item__desc-counting">
+                                        <p class="item__desc-price">359₽<span>/100г.</span></p>
+                                        <div class="item__desc-counter-wrapper">
+                                            <div class="items__control" data-action="minus">-</div>
+                                            <div class="items__current" data-counter="">1</div>
+                                            <div class="items__control" data-action="plus">+</div>
+                                        </div>
+                                        <a data-cart="" class="item__desc-more" href="">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-cart__item">
+                            <div class="basket-cart__item-top">
+                                <button class="basket-cart__button-close"></button>
+                                <div class="basket-cart__img">
+                                    <img src="img/basket/tiger-prawn-salad.jpg" alt="">
+                                </div>
+                                <div class="item__desc">
+                                    <h3 class="item__desc-title">Салат с тигровыми креветками</h3>
+                                    <div class="item__desc-info">
+                                        <span class="item__desc-calories">Ккал: 245</span>
+                                        <span class="item__desc-pfc">БЖУ: 19,8/12,5/0</span>
+                                    </div>
+                                    <div class="item__desc-counting">
+                                        <p class="item__desc-price">359₽<span>/100г.</span></p>
+                                        <div class="item__desc-counter-wrapper">
+                                            <div class="items__control" data-action="minus">-</div>
+                                            <div class="items__current" data-counter="">1</div>
+                                            <div class="items__control" data-action="plus">+</div>
+                                        </div>
+                                        <a data-cart="" class="item__desc-more" href="">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-cart__item">
+                            <div class="basket-cart__item-top">
+                                <button class="basket-cart__button-close"></button>
+                                <div class="basket-cart__img">
+                                    <img src="img/basket/caesar-salad.jpg" alt="">
+                                </div>
+                                <div class="item__desc">
+                                    <h3 class="item__desc-title">Салат цезарь</h3>
+                                    <div class="item__desc-info">
+                                        <span class="item__desc-calories">Ккал: 245</span>
+                                        <span class="item__desc-pfc">БЖУ: 19,8/12,5/0</span>
+                                    </div>
+                                    <div class="item__desc-counting">
+                                        <p class="item__desc-price">359₽<span>/100г.</span></p>
+                                        <div class="item__desc-counter-wrapper">
+                                            <div class="items__control" data-action="minus">-</div>
+                                            <div class="items__current" data-counter="">1</div>
+                                            <div class="items__control" data-action="plus">+</div>
+                                        </div>
+                                        <a data-cart="" class="item__desc-more" href="">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total-order">
+                <div class="total-order__wrapper">
+                    <h3 class="total-order__title">Ваш заказ</h3>
+                    <ul class="total-order__list">
+                        <li class="total-order__item">
+                            <div class="total-order__item-name">Салат пармиджано</div>
+                            <div class="total-order__item-num">
+                                <span class="total-order__item-num--counter">1</span>шт.
+                            </div>
+                            <div class="total-order__item-price">
+                                <span class="total-order__item-price--counter">359</span>₽
+                            </div>
+                        </li>
+                        <li class="total-order__item">
+                            <div class="total-order__item-name">Салат с тигровыми креветками</div>
+                            <div class="total-order__item-num">
+                                <span class="total-order__item-num--counter">3</span>шт.
+                            </div>
+                            <div class="total-order__item-price">
+                                <span class="total-order__item-price--counter">359</span>₽
+                            </div>
+                        </li>
+                        <li class="total-order__item">
+                            <div class="total-order__item-name">Салат цезарь с вкусной заправкой оливье соус</div>
+                            <div class="total-order__item-num">
+                                <span class="total-order__item-num--counter">2</span>шт.
+                            </div>
+                            <div class="total-order__item-price">
+                                <span class="total-order__item-price--counter">359</span>₽
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="total-order__delivery">
+                        <p class="total-order__delivery-desc">
+                            Доставка
+                        </p>
+                        <p class="total-order__delivery-price">
+                            <span class="total-order__delivery-price--num">10 000</span>₽
+                        </p>
+                    </div>
+                    <div class="total-order__promo">
+                        <div class="total-order__promo-wrapper">
+                            <input type="search" class="total-order__promo-input" placeholder="Введите промокод">
+                            <button class="total-order__promo-btn">
+                                <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.17249 0.383301L5.44569 4.41911L1.17249 8.45492" stroke="white" stroke-width="0.474801" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="total-order__promo-percent">
+                            <span class="total-order__promo-percent--num">-30</span>%
+                        </div>
+                    </div>
+                    <div class="basket__result">
+                        <p class="basket__result-text">Итог:</p>
+                        <div class="basket__result-price">
+                            <p class="basket__result-oldprice">
+                                <span class="basket__result-oldprice--num">40 523</span>₽
+                            </p>
+                            <p class="basket__result-newprice">
+                                <span class="basket__result-newprice--num">15 272</span>₽
+                            </p>
+                        </div>
+                    </div>
+                    <button class="total-order__button" type="submit">Оформить заказ</button>
+                </div>
+            </div>
+            <div class="order-add">
+                <div class="order-add__wrapper">
+                    <h3 class="order-add__title">Добавить к заказу</h3>
+                    <div class="order-add__inner">
+                        <div class="order-add__cart">
+                            <button class="order-add__btn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10.3406" cy="10.2888" r="9.40625" fill="#CB3B48"/>
+                                    <path d="M11.6778 15.1065V11.6258H15.1587V9.8855H11.6778V6.38855H9.93736V9.8855H6.44067V11.6258H9.93736V15.1065H11.6778Z" fill="white"/>
+                                </svg>
+                            </button>
+                            <img src="img/sauces/tomato.jpg" alt="" class="order-add__img">
+                            <div class="order-add__info">
+                                <p class="order-add__desc">Острый томатный соус</p>
+                                <p class="order-add__num">+30₽<span>/100г.</span></p>
+                            </div>
+                        </div>
+                        <div class="order-add__cart">
+                            <button class="order-add__btn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10.3406" cy="10.2888" r="9.40625" fill="#CB3B48"/>
+                                    <path d="M11.6778 15.1065V11.6258H15.1587V9.8855H11.6778V6.38855H9.93736V9.8855H6.44067V11.6258H9.93736V15.1065H11.6778Z" fill="white"/>
+                                </svg>
+                            </button>
+                            <img src="img/sauces/teriyaki.jpg" alt="" class="order-add__img">
+                            <div class="order-add__info">
+                                <p class="order-add__desc">кисло-сладкий терияки</p>
+                                <p class="order-add__num">+30₽<span>/100г.</span></p>
+                            </div>
+                        </div>
+                        <div class="order-add__cart">
+                            <button class="order-add__btn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10.3406" cy="10.2888" r="9.40625" fill="#CB3B48"/>
+                                    <path d="M11.6778 15.1065V11.6258H15.1587V9.8855H11.6778V6.38855H9.93736V9.8855H6.44067V11.6258H9.93736V15.1065H11.6778Z" fill="white"/>
+                                </svg>
+                            </button>
+                            <img src="img/sauces/teriyaki.jpg" alt="" class="order-add__img">
+                            <div class="order-add__info">
+                                <p class="order-add__desc">кисло-сладкий терияки</p>
+                                <p class="order-add__num">+30₽<span>/100г.</span></p>
+                            </div>
+                        </div>
+                        <div class="order-add__cart">
+                            <button class="order-add__btn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10.3406" cy="10.2888" r="9.40625" fill="#CB3B48"/>
+                                    <path d="M11.6778 15.1065V11.6258H15.1587V9.8855H11.6778V6.38855H9.93736V9.8855H6.44067V11.6258H9.93736V15.1065H11.6778Z" fill="white"/>
+                                </svg>
+                            </button>
+                            <img src="img/sauces/teriyaki.jpg" alt="" class="order-add__img">
+                            <div class="order-add__info">
+                                <p class="order-add__desc">кисло-сладкий терияки</p>
+                                <p class="order-add__num">+30₽<span>/100г.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <a class="footer__logo-img" href="#">
+                        <img src="img/logo-mob.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer__phone">
+                    <a href="tel:88009999999" class="footer__phone-link">8 (800) 999-99-99</a>
+                    <p class="footer__phone-details">Бронь столов с 09:00 до 19:00</p>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                            <a href="index.html" class="footer__nav-link">Главная</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="menu-main.html" class="footer__nav-link">Меню</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link">Акции</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link">Команда</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="interior.html" class="footer__nav-link">Интерьер</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="" class="footer__nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__social">
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item">
+                            <a href="" class="footer__social-link">
+                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.269537 6.79636L3.78416 8.10813L5.14454 12.4831C5.23158 12.7633 5.57422 12.8669 5.80164 12.6809L7.76075 11.0838C7.96611 10.9165 8.25861 10.9081 8.47323 11.0639L12.0068 13.6294C12.2501 13.8062 12.5947 13.6729 12.6557 13.3789L15.2442 0.927725C15.3108 0.606596 14.9953 0.3387 14.6895 0.456963L0.265419 6.02135C-0.0905382 6.15863 -0.0874367 6.66259 0.269537 6.79636ZM4.9253 7.40984L11.7942 3.17929C11.9176 3.10348 12.0446 3.2704 11.9386 3.36873L6.26981 8.63818C6.07056 8.82366 5.94202 9.07187 5.90562 9.3413L5.71251 10.7723C5.68694 10.9634 5.41853 10.9824 5.36581 10.7975L4.62314 8.18791C4.53807 7.89027 4.66203 7.57234 4.9253 7.40984Z" fill="#BD2D43"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="" class="footer__social-link">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.92324 0.293028C4.73422 0.293028 1.70593 0.00956935 0.549242 2.97579C0.0714601 4.20089 0.140844 5.79194 0.140844 8.07014C0.140844 10.0693 0.0767298 11.9482 0.549242 13.1636C1.70329 16.1316 4.75618 15.8473 7.92148 15.8473C10.9752 15.8473 14.1239 16.1649 15.2946 13.1636C15.7733 11.9262 15.703 10.3589 15.703 8.07014C15.703 5.03196 15.8707 3.07057 14.3961 1.59799C12.9031 0.106103 10.8839 0.293028 7.91972 0.293028H7.92324ZM7.22589 1.69452C13.8779 1.68399 14.7246 0.945071 14.2574 11.2101C14.0914 14.8407 11.3248 14.4422 7.92411 14.4422C1.72349 14.4422 1.54521 14.265 1.54521 8.06663C1.54521 1.79632 2.03704 1.69803 7.22589 1.69277V1.69452ZM12.0775 2.98544C11.5619 2.98544 11.1439 3.40317 11.1439 3.91831C11.1439 4.43345 11.5619 4.85118 12.0775 4.85118C12.593 4.85118 13.0111 4.43345 13.0111 3.91831C13.0111 3.40317 12.593 2.98544 12.0775 2.98544ZM7.92324 4.07627C5.71613 4.07627 3.92709 5.86478 3.92709 8.07014C3.92709 10.2755 5.71613 12.0631 7.92324 12.0631C10.1303 12.0631 11.9185 10.2755 11.9185 8.07014C11.9185 5.86478 10.1303 4.07627 7.92324 4.07627ZM7.92324 5.47777C11.3529 5.47777 11.3573 10.6625 7.92324 10.6625C4.49445 10.6625 4.48918 5.47777 7.92324 5.47777Z" fill="#BD2D43"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="" class="footer__social-link">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4749 2.73052C12.0916 1.33893 10.2521 0.572227 8.29233 0.571411C4.25406 0.571411 0.967497 3.87392 0.965873 7.93297C0.965331 9.23052 1.30265 10.4971 1.94381 11.6136L0.904419 15.4286L4.78829 14.4048C5.85845 14.9914 7.06326 15.3005 8.28936 15.3009H8.29242C12.3302 15.3009 15.6172 11.9981 15.6187 7.93886C15.6195 5.97163 14.8582 4.12202 13.4749 2.73052ZM8.29233 14.0576H8.28981C7.19717 14.0571 6.12556 13.762 5.19049 13.2046L4.96823 13.0719L2.66348 13.6795L3.27865 11.4215L3.13382 11.19C2.52424 10.2157 2.20235 9.0896 2.20289 7.93342C2.20416 4.55964 4.93592 1.81483 8.29477 1.81483C9.92127 1.81537 11.4502 2.45267 12.5999 3.60931C13.7495 4.76594 14.3823 6.30334 14.3818 7.93841C14.3803 11.3125 11.6487 14.0576 8.29233 14.0576ZM11.6325 9.47463C11.4495 9.3825 10.5494 8.93762 10.3816 8.87614C10.2139 8.81475 10.0917 8.78419 9.96982 8.96827C9.84772 9.15235 9.49696 9.56676 9.39011 9.68946C9.28327 9.81224 9.1766 9.82765 8.9935 9.73552C8.81041 9.64348 8.22059 9.44915 7.52132 8.82246C6.97717 8.33468 6.6098 7.73229 6.50295 7.54821C6.39629 7.36395 6.50205 7.27399 6.58327 7.17279C6.78143 6.92551 6.97987 6.66625 7.04088 6.54356C7.10197 6.42078 7.07138 6.31332 7.02553 6.22128C6.97987 6.12924 6.61377 5.22379 6.46126 4.85535C6.31254 4.4968 6.16175 4.54523 6.04931 4.5396C5.94265 4.53425 5.82055 4.53316 5.69846 4.53316C5.57645 4.53316 5.3781 4.57914 5.21025 4.7634C5.0425 4.94758 4.56963 5.39255 4.56963 6.29799C4.56963 7.20344 5.22559 8.07815 5.3171 8.20093C5.4086 8.32371 6.60799 10.1818 8.4443 10.9785C8.88106 11.1682 9.22199 11.2813 9.48793 11.3661C9.9265 11.5061 10.3255 11.4863 10.6409 11.439C10.9927 11.3861 11.7239 10.9939 11.8766 10.5643C12.0291 10.1345 12.0291 9.76626 11.9833 9.68946C11.9376 9.61274 11.8155 9.56676 11.6325 9.47463Z" fill="#BD2D43"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__additionally">
+                <ul class="footer__additionally-list">
+                    <li class="footer__additionally-item">
+                        <a href="" class="footer__additionally-link">Политика конфидециальности</a>
+                    </li>
+                    <li class="footer__additionally-item">
+                        <a href="" class="footer__additionally-link">Договор оферты</a>
+                    </li>
+                </ul>
+                <p class="footer__additionally-info">Информация на сайте не является публичной офертой</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
